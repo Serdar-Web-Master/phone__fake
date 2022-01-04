@@ -1,43 +1,88 @@
 @media (max-width: 360px) {
-    .header {
-        display: flex;
-        width: 360px;
-        height: 57px;
-        background-color: #3e5a6c;
-        overflow: hidden;
-    }
-    .header__item {
-        width: 90px;
-    }
-    .main__top {
-        width: 360px;
-        height: 280px;
-    }
-    .main__bottom {
-        width: 360px;
-        height: 280px;
-       
-    }
-    .main__row {
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 10px;
-    }
-    .row__item {
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        width: 100px;
-        height: 45px;
-        border: 3px solid rgba(26, 24, 24, 0.363);
-        border-radius: 5px;
-        box-shadow: 2px;
-    }
-    .row1 {
-        font-size: 30px;
-    }
-    .row2 {
-        margin-left: 20px;
-    }
+  .wrapper {
+    position: relative;
+  }
+  .wrapper__dack {
+    background-color: rgba(79, 77, 82, 0.822);
+  }
+  .header {
+    display: flex;
+    width: 360px;
+    height: 57px;
+    background-color: #3e5a6c;
+    overflow: hidden;
+  }
+  .header__item {
+    width: 90px;
+  }
+  .main__top {
+    width: 360px;
+    height: 280px;
+    position: relative;
+  }
+  .display {
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    font-size: 60px;
+  }
+  .main__bottom {
+    width: 360px;
+    height: 280px;
+  }
+  .main__row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+  .row__item {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 45px;
+    border: 3px solid rgba(26, 24, 24, 0.363);
+    border-radius: 5px;
+    box-shadow: 2px;
+    user-select: none;
+  }
+  .row__itemb {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 45px;
+    border: 3px solid rgba(26, 24, 24, 0.363);
+    border-radius: 5px;
+    box-shadow: 2px;
+    user-select: none;
+  }
+  .row1 {
+    font-size: 30px;
+  }
+  .row2 {
+    margin-left: 20px;
+  }
+}
+.footer {
+  width: 320px;
+  height: 100px;
+  position: absolute;
+  left: 24%;
+  top: 34%;
+  transform: translateX(-69px);
+  background: rgb(244, 241, 247);
+  z-index: 5;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid #403c3c;
+  display: none;
+}
+.footer h1 {
+  font-size: 20px;
+  text-align: center;
 }

@@ -1,114 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="normalize.css">
-		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="style360.css">
-		  <!-- favicons -->
-		  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
-		  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
-		  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-		  <link rel="manifest" href="img/favicons/site.webmanifest">
-		  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-		  <meta name="msapplication-TileColor" content="#da532c">
-		  <meta name="theme-color" content="#ffffff">
-			  <!-- favicons -->
-		<title></title>
-	</head>
-	<body>
-		<header class="header">
-			<div class="header__item">
-				<img src="img\keypad.png" alt="" class="header__img">
-			</div>
-			<div class="header__item">
-				<img src="img\logs.png" alt="" class="header__img">
-			</div>
-			<div class="header__item">
-				<img src="img\favorites.png" alt="" class="header__img">
-			</div>
-			<div class="header__item">
-				<img src="img\contacts.png" alt="" class="header__img">
-			</div>
-		</header>
-		<main class="main">
-			<div class="main__top"></div>
-			<div class="main__bottom">
-				<div class="main__row">
-					<div class="row__item">
-						<div class="row1">1</div>
-						<div class="row2"></div>
-					</div>
-					<div class="row__item">
-						<div class="row1">2</div>
-						<div class="row2">ABC</div>
-					</div>
-					<div class="row__item">
-						<div class="row1">3</div>
-						<div class="row2">DEF</div>
-					</div>
-				</div>
-				<div class="main__row">
-					<div class="row__item">
-						<div class="row1">4</div>
-						<div class="row2">GHI</div>
-					</div>
-					<div class="row__item">
-						<div class="row1">5</div>
-						<div class="row2">JKL</div>
-					</div>
-					<div class="row__item">
-						<div class="row1">6</div>
-						<div class="row2">MNO</div>
-					</div>
-				</div>
-				<div class="main__row">
-					<div class="row__item">
-						<div class="row1">7</div>
-						<div class="row2">PQRS</div>
-					</div>
-					<div class="row__item">
-						<div class="row1">8</div>
-						<div class="row2">TUV</div>
-					</div>
-					<div class="row__item">
-						<div class="row1">9</div>
-						<div class="row2">WXYZ</div>
-					</div>
-				</div>
-				<div class="main__row">
-					<div class="row__item">
-						<div class="row1">*</div>
-						<div class="row2">P</div>
-					</div>
-					<div class="row__item">
-						<div class="row1">0</div>
-						<div class="row2">+</div>
-					</div>
-					<div class="row__item">
-						<div class="row1">#</div>
-						<div class="row2">DEF</div>
-					</div>
-				</div>
-				<div class="main__row">
-					<div class="row__item">
-					<img src="img\1.png" alt="">
-					</div>
-					<div class="row__item">
-						<img class="call" src="img\2.png" alt="">
-					</div>
-					<div class="row__item">
-						<img src="img\3.png" alt="">
-					</div>
-				</div>
-			</div>
-		</main>
-		<footer class="footer">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style360.css" />
+    <!-- favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicons/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- favicons -->
+    <title></title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__item">
+          <img src="img\keypad.png" alt="" class="header__img" />
+        </div>
+        <div class="header__item">
+          <img src="img\logs.png" alt="" class="header__img" />
+        </div>
+        <div class="header__item">
+          <img src="img\favorites.png" alt="" class="header__img" />
+        </div>
+        <div class="header__item">
+          <img src="img\contacts.png" alt="" class="header__img" />
+        </div>
+      </header>
+      <main class="main">
+        <div class="main__top">
+          <p class="display"></p>
+        </div>
+        <div class="main__bottom">
+          <div class="main__row">
+            <div value="1" class="row__item">
+              <div class="row1">1</div>
+              <div class="row2"></div>
+            </div>
+            <div value="2" class="row__item">
+              <div class="row1">2</div>
+              <div class="row2">ABC</div>
+            </div>
+            <div value="3" class="row__item">
+              <div class="row1">3</div>
+              <div class="row2">DEF</div>
+            </div>
+          </div>
+          <div class="main__row">
+            <div value="4" class="row__item">
+              <div class="row1">4</div>
+              <div class="row2">GHI</div>
+            </div>
+            <div value="5" class="row__item">
+              <div class="row1">5</div>
+              <div class="row2">JKL</div>
+            </div>
+            <div value="6" class="row__item">
+              <div class="row1">6</div>
+              <div class="row2">MNO</div>
+            </div>
+          </div>
+          <div class="main__row">
+            <div value="7" class="row__item">
+              <div class="row1">7</div>
+              <div class="row2">PQRS</div>
+            </div>
+            <div value="8" class="row__item">
+              <div class="row1">8</div>
+              <div class="row2">TUV</div>
+            </div>
+            <div value="9" class="row__item">
+              <div class="row1">9</div>
+              <div class="row2">WXYZ</div>
+            </div>
+          </div>
+          <div class="main__row">
+            <div value="*" class="row__item">
+              <div class="row1">*</div>
+              <div class="row2">P</div>
+            </div>
+            <div value="0" class="row__item">
+              <div class="row1">0</div>
+              <div class="row2">+</div>
+            </div>
+            <div value="#" class="row__item">
+              <div class="row1">#</div>
+              <div class="row2">DEF</div>
+            </div>
+          </div>
+          <div class="main__row">
+            <div class="row__itemb">
+              <img src="img\1.png" alt="" />
+            </div>
+            <div class="row__itemb">
+              <img class="call" src="img\2.png" alt="" />
+            </div>
+            <div class="row__itemb">
+              <img src="img\3.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer">
+      <h1>Sizin balansynyz 180.036,10 manat</h1>
 
-		</footer>
-		
-	<script src="script.js"></script>
-	</body>
-</html>        
+      <h1 class="ok">OK</h1>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
