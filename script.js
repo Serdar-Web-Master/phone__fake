@@ -7,16 +7,13 @@ const call = document.querySelector(".call");
 // console.log(call);
 // call.onclick = f1;
 
-function f1() {
-  const audio = new Audio();
-  audio.src = "Recording_3.m4a";
-  audio.play();
-}
-
 call.addEventListener("click", () => {
   wrapper.classList.add("wrapper__dack");
   display.innerHTML = "";
-  footer.style.display = "flex";
+
+  setTimeout(function () {
+    footer.style.display = "flex";
+  }, 2000);
 });
 
 ok.addEventListener("click", () => {
@@ -30,13 +27,21 @@ const numbers = document.querySelectorAll(".row__item");
 
 // console.log(numbers[0]);
 
+const audio = new Audio();
+audio.src = "audio_p.mp3";
+
+function play() {
+  audio.play();
+}
+
 numbers.forEach(function (e) {
   e.addEventListener("click", f1);
-  function f1() {
-    console.log(e.getAttribute("value"));
-    let key = e.getAttribute("value");
 
-    console.log("key=" + key);
+  function f1() {
+    play();
+    let key = e.getAttribute("value");
     display.innerHTML += key;
   }
 });
+
+// var intervalID = setTimeout(function() { myFunc("one", "two", "three"); }, 1000);

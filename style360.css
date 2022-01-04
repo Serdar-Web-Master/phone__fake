@@ -47,6 +47,9 @@
     box-shadow: 2px;
     user-select: none;
   }
+  .row__item:active {
+    background-color: rgb(82, 79, 85);
+  }
   .row__itemb {
     display: flex;
     text-align: center;
@@ -81,6 +84,7 @@
   justify-content: space-around;
   border: 1px solid #403c3c;
   display: none;
+  transition: display 3s;
 }
 .footer h1 {
   font-size: 20px;
