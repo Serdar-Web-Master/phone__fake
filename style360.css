@@ -102,13 +102,25 @@
   border: 3px solid red;
 }
 
-.button {
+.btn__block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.btn {
   width: 100px;
   height: 40px;
   font-size: 30px;
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  /* transition: background 0.5s; */
+}
+.btn:active {
+  background-color: blue;
 }
 
 .pop__up {

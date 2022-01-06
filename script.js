@@ -4,13 +4,19 @@ const footer = document.querySelector(".footer");
 const ok = document.querySelector(".ok");
 const pop__toogle = document.querySelector(".pop__toogle");
 const pop__up = document.querySelector(".pop__up");
+const clear = document.querySelector(".clear");
 
 // Pop_Up  !!!!!!!!!!!!!!!!
 const input = document.querySelector(".input");
 const button = document.querySelector(".button");
+const close = document.querySelector(".close");
 
 pop__toogle.addEventListener("click", () => {
   pop__up.classList.add("dis__on");
+});
+
+close.addEventListener("click", () => {
+  pop__up.classList.remove("dis__on");
 });
 
 let balans;
@@ -54,10 +60,6 @@ ok.addEventListener("click", () => {
 
 const numbers = document.querySelectorAll(".row__item");
 
-// console.log(numbers);
-
-// console.log(numbers[0]);
-
 const audio = new Audio();
 audio.src = "audio_p.mp3";
 
@@ -75,4 +77,6 @@ numbers.forEach(function (e) {
   }
 });
 
-// var intervalID = setTimeout(function() { myFunc("one", "two", "three"); }, 1000);
+clear.addEventListener("click", () => {
+  display.innerHTML = "";
+});
