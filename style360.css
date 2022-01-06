@@ -90,3 +90,23 @@
   font-size: 20px;
   text-align: center;
 }
+
+.input__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  width: 200px;
+  height: 50px;
+  margin: 30px auto;
+  border: 3px solid red;
+}
+
+.button {
+  width: 100px;
+  height: 40px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}

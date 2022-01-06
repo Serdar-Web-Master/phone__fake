@@ -11,7 +11,7 @@ call.addEventListener("click", () => {
   wrapper.classList.add("wrapper__dack");
   display.innerHTML = "";
 
-  setTimeout(function () {
+  setTimeout(() => {
     footer.style.display = "flex";
   }, 2000);
 });
