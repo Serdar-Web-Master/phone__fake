@@ -5,6 +5,7 @@ const ok = document.querySelector(".ok");
 const pop__toogle = document.querySelector(".pop__toogle");
 const pop__up = document.querySelector(".pop__up");
 const clear = document.querySelector(".clear");
+const span = document.querySelector(".span");
 
 // Pop_Up  !!!!!!!!!!!!!!!!
 const input = document.querySelector(".input");
@@ -14,15 +15,12 @@ const close = document.querySelector(".close");
 pop__toogle.addEventListener("click", () => {
   pop__up.classList.add("dis__on");
 });
-
 close.addEventListener("click", () => {
   pop__up.classList.remove("dis__on");
 });
 
 let balans;
-
 button.onclick = inputReding;
-
 function inputReding() {
   balans = input.value;
   console.log(balans);
@@ -47,6 +45,7 @@ const call = document.querySelector(".call");
 call.addEventListener("click", () => {
   wrapper.classList.add("wrapper__dack");
   display.innerHTML = "";
+  span.innerHTML = balans;
 
   setTimeout(() => {
     footer.style.display = "flex";
