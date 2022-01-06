@@ -27,14 +27,6 @@ function inputReding() {
 }
 
 console.log(balans);
-// let balans = 0;
-
-// let vyvod = button.addEventListener("click", () => {
-//   balans = input.value;
-//   return balans;
-// });
-
-// console.log(vyvod);
 
 // Pop Up  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 

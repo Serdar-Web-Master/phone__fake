@@ -78,7 +78,7 @@
   transform: translateX(-69px);
   background: rgb(244, 241, 247);
   z-index: 5;
-  line-height: 20px;
+  line-height: 27px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
