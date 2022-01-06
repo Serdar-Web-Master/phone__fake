@@ -110,3 +110,16 @@
   justify-content: center;
   margin: 0 auto;
 }
+
+.pop__up {
+  display: none;
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+  background-color: aquamarine;
+  top: 150px;
+  left: 0;
+}
+.dis__on {
+  display: block;
+}
